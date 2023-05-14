@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #defcf9;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 92px;
+  font-size: 0.95rem;
+  color: blue;
+  letter-spacing: 2px;
+}
+
+section {
+  height: 60px;
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+section > input,
+section > button {
+  border: 1px solid transparent;
+  border-radius: 5px;
+  height: 60%;
+  width: 59%;
+  font-size: 1.1rem;
+  padding: 2px 6px 2px 13px;
+  font-size: medium;
+  background-color: white;
+  box-shadow: 1px 2px 5px rgb(205, 203, 203);
+}
+
+section > button {
+  box-shadow: none;
+  padding: 0;
+  background-color: #3c84ab;
+  color: white;
+  width: 11%;
+  font-size: x-large;
+  cursor: pointer;
+}
+
+button:active {
+  transform: scale(0.88);
+}
+
+section > input:focus {
+  outline: none;
+}
+
+#messageBox > ul {
+  margin-top: 10%;
+  padding: 0 32px 0 32px;
+}
+
+#messageBox > ul > li {
+  height: 57px;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 17px;
+  background: transparent;
+  overflow: hidden;
+  gap: 15px;
+}
+
+#messageBox > ul > li:nth-child(odd) {
+  background: #c7e9ff;
+}
+
+ul > li > .btn_control {
+  width: 30%;
+  display: flex;
+  justify-content: end;
+}
+
+.btn_control > button {
+  cursor: pointer;
+  margin-right: 17px;
+  height: 39px;
+  width: 63px;
+  border-radius: 5px;
+  border: transparent;
+}
+
+.btn_control > .edit_btn,
+.update_btn {
+  background-color: rgb(23, 181, 23);
+  color: white;
+}
+
+.btn_control > .delete_btn {
+  background: red;
+  color: white;
+}
+
+.todo_created_task > input {
+  height: 38px;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+}
+
+.todo_created_task > input:focus {
+  outline: 2px solid grey;
+}
+
+@media (max-width: 400px) {
+  header > h1 {
+    font-size: x-large;
+  }
+  section > input {
+    font-size: small;
+  }
+}
