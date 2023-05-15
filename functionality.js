@@ -10,7 +10,7 @@ $(document).ready(() => {
       const todoList = $("#messageBox > ul");
       if (
         !todoList.find(".text_content").filter(function () {
-          return $(this).text() === txt;
+          return $(this).text().toLowerCase() === txt.toLowerCase() ;
         }).length
       ) {
         todoList.append(
